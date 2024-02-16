@@ -3,7 +3,15 @@ package aplicacion;
 import mates.Matematicas;
 import java.util.Scanner;
 
+/**
+ * Esta es la clase principal de la aplicación.
+ */
 public class Principal {
+    /**
+     * Método principal de la aplicación.
+     *
+     * @param args argumentos de la línea de comandos
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
