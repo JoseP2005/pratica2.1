@@ -1,16 +1,18 @@
 package mates;
+
 import java.util.Random;
+
 public class Matematicas {
-    public static double generarPiIterativo(int n) {
-        Random r = new Random();
-        int dentroCirculo = 0;
+    public static double generarNumeroPiIterativo(int n) {
+        Random generador = new Random();
+        int CantidadPuntos = 0;
         for (int i = 0; i < n; i++) {
-            double x = r.nextDouble();
-            double y = r.nextDouble();
+            double x = generador.nextDouble();
+            double y = generador.nextDouble();
             if (x * x + y * y <= 1) {
-                dentroCirculo++;
+                CantidadPuntos++;
             }
         }
-        return 4.0 * dentroCirculo / n;
+        return 4.0 * CantidadPuntos / n;
     }
 }
